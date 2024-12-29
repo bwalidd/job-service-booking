@@ -1,0 +1,45 @@
+<div class="bg">
+    <div class="parent">
+        <div class="child">
+            <div nz-col>
+                <h1>Company Signup</h1>
+            </div>
+
+            <form nz-form [formGroup]="ValidateForm" (ngSubmit)="submitForm()">
+                <nz-form-item>
+                    <nz-form-control nzHasFeedback nzErrorTip="the input is not valid Email!">
+                        <input nz-input formControlName="email" placeholder="Email" id="email"/>
+                    </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-control nzHasFeedback nzErrorTip="the input is not valid password!">
+                        <input nz-input type="password" formControlName="password" placeholder="password" id="password"/>
+                    </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-control nzHasFeedback nzErrorTip="the input is not valid password!">
+                        <input nz-input type="password" formControlName="password2" placeholder="password2" id="password2"/>
+                    </nz-form-control>
+                </nz-form-item>
+
+                <nz-form-item>
+                    <nz-form-control nzHasFeedback nzErrorTip="the input is not valid name!">
+                        <input nz-input formControlName="name" placeholder="name" id="name"/>
+                    </nz-form-control>
+                </nz-form-item>
+                
+                <nz-form-item>
+                    <nz-form-control nzHasFeedback nzErrorTip="the input is not valid phone!">
+                        <input nz-input formControlName="phone" placeholder="phone" id="phone"/>
+                    </nz-form-control>
+                </nz-form-item>
+
+                <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" >
+                    Signup
+                </button>
+                OR <a routerLink="/login">login now!</a>
+
+            </form>
+        </div>
+    </div>
+</div>

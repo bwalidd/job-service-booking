@@ -1,0 +1,120 @@
+.ad-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 150px;
+    min-height: 90vh;
+  
+    .top-section {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+  
+      .ad-detail {
+        width: 70%;
+        margin-right: 20px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+        padding: 30px;
+        background-color: #fff;
+  
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+  
+        .ad-title {
+          font-size: 24px;
+          margin-top: 20px;
+          font-weight: bold;
+        }
+  
+        .ad-description {
+          font-size: 14px;
+          margin-top: 20px;
+  
+          b {
+            font-weight: bold;
+          }
+        }
+      }
+  
+      .book-service {
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+        padding: 20px;
+        background-color: #fff;
+  
+        .nz-spin {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+  
+          .book-service-form {
+            h2 {
+              font-size: 18px;
+            }
+  
+            nz-form {
+              .nz-form-control {
+                width: 100%;
+  
+                nz-date-picker {
+                  width: 100%;
+                }
+              }
+  
+              .book-button {
+                margin-top: 10px;
+                display: inline-block;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .reviews-section {
+      width: 100%;
+      margin-top: 40px;
+  
+      h2 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  
+      .review-card {
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+        border-radius: 8px;
+  
+        p {
+          font-size: 14px;
+          margin: 5px 0;
+        }
+  
+        strong {
+          font-weight: bold;
+        }
+  
+        .review-rating {
+          display: block;
+          margin-top: 10px;
+  
+          nz-rate {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+  
